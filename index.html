@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Saleh Bafagih - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css"> 
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+        .project-card {height: 100%;}
+        .skill-bar {margin-bottom: 20px;}
+    </style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="imgs/saleh bafagih.jpg" alt="Profile" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>Saleh Bafagih</b></h4>
+        <p class="w3-text-grey">Aspiring Software Engineer</p>
+    </div>
+    
+    <div class="w3-bar-block">
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-user fa-fw w3-margin-right"></i>About Me
+        </a> 
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-envelope fa-fw w3-margin-right"></i>Contact
+        </a>
+    </div>
+
+    <div class="w3-panel w3-large">
+        <a href="https://www.linkedin.com/in/saleh-bafagih-06271532b/" target="_blank">
+            <i class="fab fa-linkedin fa-2x w3-hover-opacity" style="color: #0077b5;"></i>
+        </a>
+        <a href="https://github.com/salehbaf" target="_blank" style="margin-left: 10px;">
+            <i class="fab fa-github fa-2x w3-hover-opacity" style="color: #333;"></i>
+        </a>
+    </div>
+</nav>
+
+<!-- for small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<!-- Main Content -->
+<div class="w3-main" style="margin-left:300px">
+    
+    <!-- Header -->
+    <header class="w3-container">
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <h1><b>My Portfolio</b></h1>
+        <div class="w3-section w3-bottombar w3-padding-16">
+            <button onclick="toggleView('portfolio')" class="w3-button w3-white w3-hover-black w3-black" id="portfolioBtn">Portfolio</button>
+            <button onclick="toggleView('services')" class="w3-button w3-white w3-hover-black" id="servicesBtn">Services</button>
+            <a href="files/Saleh Bafagih (1).pdf" download class="w3-button w3-white w3-hover-black">
+                <i class="fa fa-download w3-margin-right"></i>Download Resume
+            </a>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio-section" class="w3-container">
+        <div class="w3-row-padding">
+            <!-- Project 1: Inventory Management System -->
+            <div class="w3-half w3-container w3-margin-bottom">
+                <div class="w3-card-4 project-card">
+                    <img src="imgs/inventory.jpg" alt="Inventory Management System" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Inventory Management System (In Progress)</b></p>
+                        <p>Developing a system to help small businesses manage stock levels and product details in real-time.</p>
+                        <p><strong>Technologies:</strong> C, Oracle SQL</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Task Management Application -->
+            <div class="w3-half w3-container w3-margin-bottom">
+                <div class="w3-card-4 project-card">
+                    <img src="imgs/task.jpg" alt="Task Management Application" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Task Management Application (In Progress)</b></p>
+                        <p>Developing an application to help users organize tasks, set reminders, and track progress.</p>
+                        <p><strong>Technologies:</strong> JavaScript, HTML5, CSS3</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Project 3: Customer Feedback Analysis Tool -->
+             <div class="w3-half w3-container w3-margin-bottom">
+                <div class="w3-card-4 project-card">
+                    <img src="imgs/feedback.jpg" alt="Customer Feedback Analysis Tool" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Customer Feedback Analysis Tool (In Progress)</b></p>
+                        <p>A tool to classify and analyze customer feedback for business insights.</p>
+                        <p><strong>Technologies:</strong> C, SQL</p>
+                    </div>
+                </div>
+            </div>
+
+               <!-- Project 4: Self-Learning Quiz Application -->
+               <div class="w3-third w3-container w3-margin-bottom project-card">
+                 <img src="imgs/quiz.jpg" alt="Self-Learning Quiz Application" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Self-Learning Quiz Application (In Progress)</b></p>
+                    <p>A quiz app to help users practice coding and technical questions interactively.</p>
+                    <p><strong>Technologies:</strong> JavaScript, HTML5</p>
+                </div>
+            </div>
+              </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services-section" class="w3-container" style="display:none">
+        <h2>Services and Pricing</h2>
+        <div class="w3-row-padding">
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                    <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+                    <li class="w3-padding-16">Basic website setup (HTML/CSS)</li>
+                    <li class="w3-padding-16">Simple debugging or code review</li>
+                    <li class="w3-padding-16">1-hour consultation</li>
+                    <li class="w3-padding-16">
+                        <h2>$100</h2>
+                        <span class="w3-opacity">per project</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                    <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
+                    <li class="w3-padding-16">Website or app development</li>
+                    <li class="w3-padding-16">Database setup and management</li>
+                    <li class="w3-padding-16">Code testing and debugging</li>
+                    <li class="w3-padding-16">5-hour support</li>
+                    <li class="w3-padding-16">
+                        <h2>$500</h2>
+                        <span class="w3-opacity">per project</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third">
+                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+                    <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+                    <li class="w3-padding-16">Full-stack development</li>
+                    <li class="w3-padding-16">Database integration</li>
+                    <li class="w3-padding-16">Comprehensive testing</li>
+                    <li class="w3-padding-16">10-hour support</li>
+                    <li class="w3-padding-16">
+                        <h2>$1000</h2>
+                        <span class="w3-opacity">per month</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- about me section-->
+    <div class="w3-container w3-padding-large" id="about">
+        <h4><b>About Me</b></h4>
+        <p>Hello! I'm Saleh Bafagih, an enthusiastic and dedicated software engineering student with a passion for creating efficient, user-focused applications. With a strong foundation in C, JavaScript, HTML, and Oracle SQL, I enjoy exploring various facets of software development—from front-end design to back-end database management. My journey in tech is fueled by a commitment to problem-solving and continuous learning.</p>
+        
+        <h4>Technical Skills</h4>
+        <p>C programming</p>
+        <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">90%</div>
+        </div>
+        <p>JavaScript</p>
+        <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+        </div>
+        <p>Oracle SQL</p>
+        <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+        </div>
+    </div>
+    <div class="w3-container w3-padding-large w3-grey" id="contact">
+        <h4><b>Contact Me</b></h4>
+        <div class="w3-row-padding w3-center w3-padding-24">
+            <div class="w3-third w3-dark-grey">
+                <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+                <p>salehbafagih54@gmail.com</p>
+            </div>
+            <div class="w3-third w3-teal">
+                <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+                <p>Toronto, CA</p>
+            </div>
+            <div class="w3-third w3-dark-grey">
+                <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+                <p>414-552-1286</p>
+            </div>
+        </div>
+        
+        <form action="/action_page.php" target="_blank">
+            <div class="w3-section">
+                <label>Name</label>
+                <input class="w3-input w3-border" type="text" name="Name" required>
+            </div>
+            <div class="w3-section">
+                <label>Email</label>
+                <input class="w3-input w3-border" type="text" name="Email" required>
+            </div>
+            <div class="w3-section">
+                <label>Message</label>
+                <textarea class="w3-input w3-border" name="Message" required></textarea>
+            </div>
+            <button type="submit" class="w3-button w3-black">
+                <i class="fa fa-paper-plane w3-margin-right"></i>Send Message
+            </button>
+        </form>
+    </div>
+    
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+    <div class="w3-row-padding">
+        
+        <!-- Contact -->
+        <div class="w3-third">
+            <h3>Contact Me</h3>
+            <p>Email: <a href="mailto:salehbafagih54@gmail.com" class="w3-text-light-grey">salehbafagih54@gmail.com</a></p>
+            <p>Location: Toronto, Canada</p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="w3-third">
+            <h3>Quick Links</h3>
+            <p><a href="#portfolio" class="w3-text-light-grey">Projects</a></p>
+            <p><a href="#about" class="w3-text-light-grey">About Me</a></p>
+            <p><a href="#contact" class="w3-text-light-grey">Contact</a></p>
+        </div>
+        
+        <!-- Social media Links -->
+        <div class="w3-third">
+            <h3>Follow Me</h3>
+            <a href="https://www.linkedin.com/in/saleh-bafagih-06271532b/" target="_blank">
+                <i class="fab fa-linkedin fa-2x w3-hover-opacity" style="color: #0077b5;"></i>
+            </a>
+            <a href="https://github.com/salehbaf" target="_blank" style="margin-left: 10px;">
+                <i class="fab fa-github fa-2x w3-hover-opacity" style="color: #333;"></i>
+            </a>
+        </div>
+    </div>
+  
+    <div class="w3-center w3-padding-24">
+        <p>© 2024 Saleh Bafagih. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Link to JavaScript file -->
+<script src="js/script.js"></script>
+</body>
+</html>
+
+

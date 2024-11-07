@@ -1,0 +1,215 @@
+/*  Page Styles */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    color: #333;
+}
+
+.w3-main {
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Sidebar Styles */
+.w3-sidebar {
+    background: linear-gradient(to bottom, #ffffff, #e8e8e8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.w3-sidebar img {
+    width: 80%; /* Makes the profile picture larger */
+    border-radius: 50%; /* Circular profile image */
+    margin-bottom: 15px;
+}
+
+.w3-sidebar .w3-text-grey {
+    color: #666;
+}
+
+.w3-sidebar .w3-bar-item:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+/* Header and Button Styles */
+.w3-section .w3-button {
+    margin-right: 10px;
+    background-color: #1abc9c; /*  color for buttons */
+    color: white;
+    border-radius: 4px;
+}
+
+.w3-section .w3-button:hover {
+    background-color: #16a085;
+}
+
+/* Project Card Styles */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 8px solid #e8e8e8;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .w3-container {
+    padding: 16px;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+.project-card p b {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#contact h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-info-box {
+    background-color: #1abc9c;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-box i {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.contact-info-box:hover {
+    background-color: #16a085;
+}
+
+/* Input Fields */
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Submit Button */
+#contact button[type="submit"] {
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #16a085;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    /* Sidebar */
+    #mySidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    
+    .w3-main {
+        margin-left: 0;
+    }
+
+    .w3-row-padding .w3-half {
+        width: 50%;
+    }
+}
+
+/* Mobile view*/
+@media screen and (max-width: 767px) {
+    
+    #mySidebar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        height: 100vh;
+        display: none;
+    }
+
+   
+    #myOverlay {
+        display: block;
+    }
+
+    .w3-main {
+        margin-left: 0;
+        padding-top: 80px; 
+    }
+
+ 
+    .w3-row-padding .w3-half, .w3-row-padding .w3-third {
+        width: 100%;
+    }
+
+    /* Responsive padding for containers */
+    .w3-container {
+        padding: 16px;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.w3-section .w3-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.w3-section .w3-button:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+
